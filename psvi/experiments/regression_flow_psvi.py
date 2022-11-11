@@ -4,6 +4,8 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
+# BNN regression experiment (experimental code / not tested)
+
 # Import libraries
 import itertools
 import os
@@ -22,17 +24,17 @@ from fblearner.flow.api import Capability
 
 from iopath.common.file_io import PathManager
 from iopath.fb.manifold import ManifoldPathHandler
-from pandora.experimental.psvi.inference.psvi_dl_regression import (
+from psvi.inference.psvi_dl_regression import (
     PSVIR_DL,
     PSVIRAV_DL,
     PSVIRLearnV_DL,
 )
 
-from pandora.experimental.psvi.inference.utils import (
+from psvi.inference.utils import (
     get_regression_benchmark,
     hyperparams_for_regression,
 )
-from pandora.experimental.psvi.models.neural_net import (
+from psvi.models.neural_net import (
     gaussian_fn,
     make_regressor_net,
     VILinear,

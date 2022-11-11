@@ -26,8 +26,9 @@ setup(
         "torch>=1.12.0",
         "torchvision==0.13.0",
         "tqdm==4.64.0",
-        'TyXe @ git+https://github.com/TyXe-BDL/TyXe',
+        "TyXe @ git+https://github.com/TyXe-BDL/TyXe",
         "arff==0.9",
+	"pystan==3.5.0",
     ],
     keywords=[
         "bilevel optimization",
